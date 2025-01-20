@@ -273,6 +273,20 @@ p strong{
   margin-bottom: 50px;
 }
 
+.iframe-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+iframe {
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+
+
 /*==================== RESPONSIVE STYLES ====================*/
 
 @media (max-width: 1200px) {
