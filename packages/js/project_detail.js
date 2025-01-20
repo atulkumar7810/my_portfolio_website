@@ -27,3 +27,23 @@ window.addEventListener('scroll', () => {
 scrollup.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+
+
+
+// Function to make iframe responsive
+function makeIframeResponsive() {
+    const iframe = document.querySelector("iframe");
+    if (iframe) {
+        const containerWidth = iframe.parentElement.offsetWidth;
+        iframe.style.width = containerWidth + "px";
+        iframe.style.height = (containerWidth * 9) / 16 + "px"; // Maintain 16:9 aspect ratio
+    }
+}
+
+// Call the function initially
+makeIframeResponsive();
+
+// Update iframe dimensions on window resize
+window.addEventListener("resize", makeIframeResponsive);
