@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../packages/css/styles.css" />
+    <link rel="stylesheet" href="../packages/css/project-details.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="header container" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Atul Kumar</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Certification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== HOME ====================-->
+
+    <!-- HERO SECTION -->
+    <section class="project__hero">
+        <h1 class="project__title">AtliQ Mart Analysis</h1>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="project__containers container">
+        <!-- IMAGE GALLERY -->
+        <div class="iframe-container">
+            <iframe title="main_atliq_mart" width="600" height="373.5"
+                src="https://app.powerbi.com/view?r=eyJrIjoiMjc0OGQ2NDYtMTY2Zi00YTRhLTg2NDgtYjEzNjlkNjMyOTQwIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+                frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+
+
+        <!-- PROJECT INFORMATION -->
+        <div class="project__info container">
+            <div class="projectc_link">
+                <h2>Project Link:</h2>
+                <a href="https://github.com/atulkumar7810/AtliQ_Mart-Analysis"><img class="images_link"
+                        src="../packages/images/github.png" alt="" />
+                    Github</a>
+                <a href="https://www.linkedin.com/in/atulkumar-s/"><img class="images_link"
+                        src="../packages/images/likendin.png" alt="" />
+                    Linkedin</a>
+            </div>
+
+            <h2 class="section__title">About the Project</h2>
+
+            <!-- <h3>Project Objective: </h3> -->
+            <p>
+                This analysis aims to assess AtliQ Mart's supply chain performance to support strategic improvements for
+                the coming period. The focus is on evaluating key indicators such as On-Time Delivery (OT%), In-Full
+                Delivery (IF%), and On-Time In-Full (OTIF%) metrics to identify operational inefficiencies and drive
+                targeted enhancements.
+                <br />
+                <br />
+                A Snowflake Schema is utilized to structure the data efficiently, enabling a comprehensive view of
+                performance. The schema includes:
+            </p>
+            <p><strong> Key Datasets:</strong></p>
+            <ul>
+                <li>Dimension Tables:
+                    <ul>
+                        <li>dim_customers: Contains details about each customer (customer ID, name, city).</li>
+                        <li>dim_products: Provides product information (product name, product ID, category).</li>
+                        <li>dim_date: Offers date attributes at daily and monthly levels (date, mmm_yy, week number).
+                        </li>
+                        <li>dim_targets_orders: Holds target service-level metrics for customers (ontime, infull, and
+                            otif targets).</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Fact Tables:
+                    <ul>
+                        <li>fact_order_lines: Records detailed order-level data, including order quantities, delivery
+                            dates, and delivery status (In Full, On Time, On Time In Full).</li>
+                        <li>fact_orders_aggregate: Aggregates order performance metrics at the customer level,
+                            indicating overall on-time, in-full, and OTIF performance.</li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+            <!-- 
+
+
+            <div class="project__gallery">
+                <div class="project__image-main">
+                    <img src="../packages/images/goodcabs_image/main_image.png" alt="">
+                </div>
+            </div> -->
+
+            <div class="skills">
+                <p><strong>Skills: </strong> PowerBi, Excel, SQL</p>
+            </div>
+
+            <div class="approach">
+                <h2 class="section__title">Approach And Insights</h2>
+                <p><strong> 𝐑𝐞𝐩𝐨𝐫𝐭 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰: </strong></p>
+                <ul>
+                    <li>
+                        <strong style="color: #fff;">Order Quantity and Fill Rate Analysis:</strong> Provides a
+                        comprehensive overview of core service metrics, including order quantities, fill rates, and
+                        delivery performance (OT, IF, OTIF). Visual cues and conditional formatting are used to
+                        highlight deviations from targets.
+                    </li>
+                    <li>
+                        <strong style="color: #fff;">City-Wise Performance Overview:</strong> Breaks down performance
+                        metrics by city, showcasing regional differences in delivery efficiency and fulfillment, which
+                        helps identify cities that require targeted operational improvements.
+                    </li>
+                    <li>
+                        <strong style="color: #fff;">Cumulative OTIF % and Trend Analysis:</strong> Offers insights into
+                        customer performance over time by presenting a matrix of OT%, IF%, and OTIF% metrics. This
+                        analysis pinpoints high-risk customers and highlights trends, providing a basis for strategic
+                        decisions.
+                    </li>
+                </ul>
+
+
+                <p style="margin-top: 30px"><strong>Key Insights:</strong></p>
+                <ul>
+                    <li>
+                        <strong>Critically Low OTIF Performance:</strong> The overall OTIF (On Time In Full) percentage
+                        is 29.02%, which is far below optimal levels. This points to major inefficiencies in supply
+                        chain execution and fulfillment operations.
+                    </li>
+                    <li>
+                        <strong>On-Time Delivery Challenges:</strong> The on-time delivery rate stands at 59.03%,
+                        meaning over 40% of orders are delivered late. A late delivery percentage of 28.88% further
+                        emphasizes that nearly one-third of orders do not meet the promised delivery schedule.
+                    </li>
+                    <li>
+                        <strong>Suboptimal In-Full Fulfillment:</strong> The in-full delivery rate is 52.78%, indicating
+                        that almost half of the orders are not completely fulfilled. This may be due to issues such as
+                        inventory mismanagement or supply disruptions.
+                    </li>
+                    <li>
+                        <strong>High Backorder Rate:</strong> With a backorder rate of 61.25%, a significant portion of
+                        orders cannot be fulfilled immediately, affecting customer satisfaction and loyalty.
+                    </li>
+                    <li>
+                        <strong>Fill Rate Discrepancies:</strong> While the volume fill rate is high at 96.59%
+                        (suggesting overall quantity fulfillment is strong), the line fill rate is only 65.96%, meaning
+                        many individual items within orders are not delivered as required.
+                    </li>
+                    <li>
+                        <strong>Customer Base and Delivery Timing:</strong> The dataset indicates a total of 35
+                        customers, with early deliveries accounting for 6.32%. Although early deliveries are positive,
+                        there is room to better align scheduling with customer expectations.
+                    </li>
+                    <li>
+                        <strong>Inconsistent Performance Trends:</strong> On-time performance fluctuates between 54% and
+                        62%, with a noted low of 53.9% and a high of 62.8%. This inconsistency suggests operational
+                        variability that needs to be addressed.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Conclusion">
+                <h2 class="section__title">Conclusion</h2>
+
+                <p style="margin-top: 30px"><strong style="color: white;">Recommendations:</strong></p>
+                <ul>
+                    <li>
+                        <strong style="color: white;">Enhance Supply Chain and Order Fulfillment:</strong>
+                        <ul>
+                            <li>Optimize supplier lead times and increase safety stock levels to reduce inventory
+                                shortages.</li>
+                            <li>Implement real-time tracking and AI-driven forecasting to identify and mitigate
+                                potential delays.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong style="color: white;">Improve Logistics and Last-Mile Delivery:</strong>
+                        <ul>
+                            <li>Collaborate with logistics partners to improve routing and scheduling, aiming to raise
+                                on-time delivery rates above 70%.</li>
+                            <li>Introduce performance-based incentives and penalties to encourage timely deliveries.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong style="color: white;">Reduce Backorders with Better Demand Planning:</strong>
+                        <ul>
+                            <li>Revise forecasting models to better predict demand and avoid stockouts.</li>
+                            <li>Establish buffer stocks for high-demand items to ensure orders are delivered in full.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong style="color: white;">Implement City-Specific Strategies:</strong>
+                        <ul>
+                            <li>Prioritize improvements in cities with lower performance. For example, while some
+                                regions may perform slightly better, others require focused interventions.</li>
+                            <li>Consider expanding warehouse capacity or establishing distribution hubs in
+                                underperforming regions.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong style="color: white;">Increase Fill Rates:</strong>
+                        <ul>
+                            <li>Address the low line fill rate (65.96%) by optimizing warehouse processes and ensuring
+                                consistent product availability.</li>
+                            <li>Enhance supplier agreements and logistics coordination to improve order line completion.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong style="color: white;">Set and Monitor Clear Targets:</strong>
+                        <ul>
+                            <li>Establish short-term improvement goals, such as increasing OTIF to 40-50% within the
+                                next quarter and on-time delivery to at least 70%.</li>
+                            <li>Use real-time dashboards with alerts to monitor daily and weekly performance, enabling
+                                swift corrective actions.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!-- <h2 class="section__title" id="feature_title">Features</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <p class="feature">Real-time data visualization</p>
+                </div>
+
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+            </div> -->
+
+            <!-- 
+            <h2 class="section__title" id="Technologies">Technologies Used</h2>
+            <div class="tech__grid">
+                <div class="tech__item">
+                    <i class="fab fa-html5 tech__icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-css3 tech__icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-js tech__icon"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid"></div>
+        </div>
+    </footer>
+
+    <!-- SCROLL UP BUTTON -->
+    <div class="scrollup" id="scrollup">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </div>
+
+    <script src="../packages/js/project_detail.js"></script>
+</body>
+
+</html>
